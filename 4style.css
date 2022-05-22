@@ -1,0 +1,180 @@
+/*Desktop*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.navbar {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+    box-shadow: inset 10000px 0 0 0 #035397;
+    color: white;
+    border-radius: 15px;
+}
+.none {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+}
+.headerpadre {
+    background-color: #0A1931;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.body_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url("Pensante.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form {
+    width: 600px;
+    margin: auto;
+    background-color: rgba(10, 25, 49, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    color: #5089C6;
+    border: none;
+}
+input, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-family: 'Bebas-Neue', sans-serif;
+    font-size: 20px;
+    border: none;
+}
+textarea {
+    max-width: 100%;
+    max-height: 200px;
+}
+#save {
+    background: #035397;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+#save:hover {
+    color: #FA7E0A;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerRedes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #035397;
+    width: 80%;
+    color: #FA7E0A;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footerRedes div {
+    padding-left: 50px;
+}
+
+.footerRedes img {
+    height: 40px;
+    width: 40px;
+}
+
+.footerMap {
+    justify-items: flex-start;
+    width: 100%;
+    height: 210px;
+    border: solid 2px #FA7E0A;
+}
+
+.footerfirma {
+    height: 30px;
+    background-color: #FA7E0A;
+    display: flex;
+    justify-content: center;
+}
+
+.footerfirma1 {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin-top: 10px;
+}
+/*Fin desktop*/
+/*Tablet*/
+@media (max-width:780px) {
+.form{
+    width: 100%;
+} 
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+.navbar {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    background-color: #edcb54;
+    margin-top: 30em;
+    transform: translateX(170%);
+    transition: all 1s;
+}
+.header .navbar-toggle {
+   transform: translateX(80%);
+}
+.menu-bar{
+    cursor: pointer;
+    color: white;
+}
+
+}
