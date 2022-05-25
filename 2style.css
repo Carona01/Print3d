@@ -38,6 +38,132 @@ a:hover {
     justify-content: center;
     height: 100px;
 }
+main{
+    display: flex;
+    justify-content: center;
+}
+.Galería{
+    height: 3000px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-items: center;
+}
+h2{
+    color: #035397;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+}
+.Section2Img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item1 {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 95%;
+    justify-content: flex-start;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    background-color: rgba(0,0, 0, .4);
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 95%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    background-color: rgba(0,0, 0, .4);
+    border-radius: 20px;
+    padding: 5px;
+    
+}
+.divp{
+    display: flex;
+    height: 20%;
+    padding: 2px;
+}
+p{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    color: #0A1931;
+}
+.divimg{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+.Imagenparada{
+    height: 300px;
+    width: auto;
+}
+.footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerRedes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #035397;
+    width: 80%;
+    color: #FA7E0A;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footerRedes div {
+    padding-left: 50px;
+}
+
+.footerRedes img {
+    height: 40px;
+    width: 40px;
+}
+
+.footerMap {
+    justify-items: flex-start;
+    width: 100%;
+    height: 210px;
+    border: solid 2px #FA7E0A;
+}
+
+.footerfirma {
+    height: 30px;
+    background-color: #FA7E0A;
+    display: flex;
+    justify-content: center;
+}
+
+.footerfirma1 {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin-top: 10px;
+}
+
 /*Fin desktop*/
 /*Tablet*/
 @media only screen and (min-width:451px)and(max-width:960px){
