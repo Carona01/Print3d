@@ -48,6 +48,7 @@ main{
     flex-direction: column;
     width: 80%;
     justify-items: center;
+    background-image: url("Imágenes/Pensante.jpg");
 }
 h2{
     color: #035397;
