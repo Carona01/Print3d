@@ -3,14 +3,12 @@
     margin: 0;
     padding: 0;
 }
-
 .header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
 }
-
 .navbar {
     width: 50%;
     display: flex;
@@ -19,7 +17,9 @@
     font-size: 20px;
     color: white;
 }
-
+li{
+    list-style: none;
+}
 .navbar a {
     color: white;
     text-decoration: none;
@@ -28,28 +28,26 @@
     border-radius: 15px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-
 a:hover {
     box-shadow: inset 1000px 0 0 0 #035397;
     color: white;
     transition: 1s;
 }
-
 .none {
     width: 50%;
     display: flex;
     justify-content: flex-start;
     color: white;
 }
-
+.menubar{
+    display: none;
+}
 .headerpadre {
     background-color: #0A1931;
     display: flex;
     justify-content: center;
     height: 100px;
 }
-
-
 .Fondo {
     height: 90vh;
     display: flex;
@@ -270,22 +268,49 @@ p{
 
 /*Fin desktop*/
 /*Tablet*/
-@media only screen and (min-width:451px)and(max-width:960px) {}
-
-/*Fin Tablet*/
-/*Celular*/
-@media only screen and (max-width:450px) {
+@media (max-width:960px) {
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+    .none{
+        display: flex;
+        width: 100%;
+    }
     .navbar {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        background-color: #5089C6;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+        left: 100%;
     }
-
-    .header {
-        flex-direction: column;
+    .menuitem {
+        line-height: 70px;
     }
-
-    .none {
-        justify-content: center;
-    }
+    .nav-menu-links:hover,
+.nav-menu-links_active {
+    background: none;
+    color: #83c5f7;
 }
-
-/*Fin Celular*/
+    #menubar{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+    .nav-toggle {
+        display: block;
+        line-height: 40px;
+    }
+    .nav-menu_visible {
+        left: 0;
+        transition: left 0.3s;
+    }
+}/*Fin Tablet*/

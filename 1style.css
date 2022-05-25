@@ -3,14 +3,12 @@
     margin: 0;
     padding: 0;
 }
-
 .header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
 }
-
 .navbar {
     width: 50%;
     display: flex;
@@ -19,29 +17,31 @@
     font-size: 20px;
     color: white;
 }
-
+li{
+    list-style: none;
+}
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 -.50rem;
-    padding: 2px .50rem;
+    margin: 0 -.25rem;
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-
 a:hover {
-    box-shadow: inset 10000px 0 0 0 #035397;
+    box-shadow: inset 1000px 0 0 0 #035397;
     color: white;
-    border-radius: 15px;
-    cursor: pointer;
+    transition: 1s;
 }
-
 .none {
     width: 50%;
     display: flex;
     justify-content: flex-start;
     color: white;
 }
-
+.navToggle{
+    display: none;
+}
 .headerpadre {
     background-color: #0A1931;
     display: flex;
@@ -51,7 +51,7 @@ a:hover {
 
 .Section1 {
     width: auto;
-    height: 500px;
+    height:550px;
     display: flex;
     justify-content: flex-start;
     font-size: 50px;
@@ -233,22 +233,56 @@ a:hover {
 
 /*Fin desktop*/
 /*Tablet*/
-@media only screen and (min-width:451px)and(max-width:960px) {}
-
+@media (max-width:960px) {
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+    .none{
+        display: flex;
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #5089C6;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+        left: 100%;
+    }
+    .menuitem {
+        line-height: 70px;
+    }
+    .nav-menu-links:hover,
+.nav-menu-links_active {
+    background: none;
+    color: #83c5f7;
+}
+    #menubar{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+    .nav-toggle {
+        display: block;
+        line-height: 40px;
+    }
+    .nav-menu_visible {
+        left: 0;
+        transition: left 0.3s;
+    }
+}    
 /*Fin Tablet*/
 /*Celular*/
 @media only screen and (max-width:450px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .header {
-        flex-direction: column;
-    }
-
-    .none {
-        justify-content: center;
-    }
+    
 }
 
 /*Fin Celular*/
