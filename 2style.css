@@ -42,16 +42,25 @@ main{
     display: flex;
     justify-content: center;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3000px;
+    background-image: url("Imágenes/Pensante.jpg");
+    background-repeat:repeat-x;
+    background-position: center;
+    background-size: cover;
+}
 .Galería{
     height: 3000px;
     display: flex;
     flex-direction: column;
     width: 80%;
     justify-items: center;
-    background-image: url("Imágenes/Pensante.jpg");
 }
 h2{
-    color: #035397;
+    color: white;
     display: flex;
     justify-content: center;
     font-family: 'Anton', sans-serif;
@@ -70,10 +79,11 @@ h2{
     justify-content: flex-start;
     font-family: 'Anton', sans-serif;
     font-size: 20px;
-    background-color: rgba(0,0, 0, .4);
+    background-color: rgba(3,83,151,.4);
     align-items: flex-start;
     border-radius: 20px;
     padding: 5px;
+    margin-bottom: 4px;
 }
 
 .item2 {
@@ -85,10 +95,10 @@ h2{
     align-items: flex-end;
     font-family: 'Anton', sans-serif;
     font-size: 20px;
-    background-color: rgba(0,0, 0, .4);
+    background-color: rgba(3,83,151,.4);
     border-radius: 20px;
     padding: 5px;
-    
+    margin-bottom: 4px;
 }
 .divp{
     display: flex;
@@ -98,7 +108,7 @@ h2{
 p{
     font-size: 40px;
     font-family: 'Anton', sans-serif;
-    color: #0A1931;
+    color: white;
 }
 .divimg{
     display: flex;
@@ -172,13 +182,10 @@ p{
 }/*Fin Tablet*/
 /*Celular*/
 @media only screen and (max-width:450px){
-    .navbar{
+    .divimg{
+        display: flex;
         flex-direction: column;
+        height: 80%;
     }
-    .header{
-        flex-direction: column;
-    }
-    .none{
-        justify-content: center;
-    }
+
 }/*Fin Celular*/
