@@ -157,8 +157,8 @@ textarea {
     margin-top: 10px;
 }
 /*Fin desktop*/
-/*Tablet*/
-@media (max-width:960px) {
+/*Navbar*/
+@media only screen and (min-width:0px) and (max-width:960px) {
     .header{
         position: relative;
         display: flex;
@@ -174,7 +174,7 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #5089C6;
+        background-color: rgba(3,83,151,.4);
         position: fixed;
         left: 0;
         top: 80px;
@@ -185,11 +185,7 @@ textarea {
     .menuitem {
         line-height: 70px;
     }
-    .nav-menu-links:hover,
-.nav-menu-links_active {
-    background: none;
-    color: #83c5f7;
-}
+   
     #menubar{
         display: block;
         cursor: pointer;
@@ -203,4 +199,12 @@ textarea {
         left: 0;
         transition: left 0.3s;
     }
-}/*Fin Tablet*/
+}    
+/*Fin Navbar*/
+/*break*/
+@media only screen and (min-width:0px) and (max-width:600px){
+.form{
+    width: 100%;
+}
+}
+/*Fin break*/

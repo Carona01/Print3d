@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
 }
+
 .header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
 }
+
 .navbar {
     width: 50%;
     display: flex;
@@ -17,9 +19,11 @@
     font-size: 20px;
     color: white;
 }
-li{
+
+li {
     list-style: none;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -28,26 +32,31 @@ li{
     border-radius: 15px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
 a:hover {
     box-shadow: inset 1000px 0 0 0 #035397;
     color: white;
     transition: 1s;
 }
+
 .none {
     width: 50%;
     display: flex;
     justify-content: flex-start;
     color: white;
 }
-.menubar{
+
+.menubar {
     display: none;
 }
+
 .headerpadre {
     background-color: #0A1931;
     display: flex;
     justify-content: center;
     height: 100px;
 }
+
 .Fondo {
     height: 90vh;
     display: flex;
@@ -92,12 +101,13 @@ a:hover {
     font-size: 30px;
 }
 
-.yo h4{
+.yo h4 {
     width: 100%;
     display: flex;
     font-size: 30px;
     justify-content: flex-start;
 }
+
 .yo ul {
     display: flex;
     justify-content: center;
@@ -106,6 +116,7 @@ a:hover {
     flex-direction: column;
     font-size: 25px;
 }
+
 .LinkedIn {
     font-size: 80%;
     background-color: #0A1931;
@@ -125,26 +136,35 @@ a:hover {
     width: auto;
     display: flex;
     justify-content: flex-start;
-    align-items: center; 
+    align-items: center;
     color: azure;
     flex-direction: column;
+    height: 1700px;
 }
-.Material{
+
+.Material {
     display: flex;
+    width: 95%;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
     text-align: right;
+    margin-top: 50px;
 }
+
 .Servicios {
     display: flex;
+    width: 95%;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    margin-top: 50px;
 }
+
 h2 {
     font-family: 'Anton', sans-serif;
     font-size: 50px;
+    margin-bottom: 30px;
 }
 
 h5 {
@@ -152,64 +172,74 @@ h5 {
     font-size: 30px;
 }
 
-
 h3 {
     font-family: 'Anton', sans-serif;
     font-size: 40px;
     font-family: 'Bebas Neue', cursive;
+    margin-bottom: 30px;
 }
-p{
+
+p {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
     font-family: 'Bebas Neue', cursive;
 }
+
 .Mision {
     display: flex;
     width: 80%;
     height: 500px;
 }
-.Mision1{
+
+.Mision1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 30%;
+    width: 70%;
 }
-.Mision2{
+
+.Mision2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.Mision2 img{
-    height: 400px;
-    width: auto;
+
+.Mision2 img {
+    width: 400px;
+    height: auto;
 }
-.Vision{
+
+.Vision {
     display: flex;
     justify-content: center;
     width: 80%;
-    height: 700px;
+    height: 500px;
 }
-.Vision1{
+
+.Vision1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+
 }
-.Vision1 img{
+
+.Vision1 img {
+    width: 400px;
     height: auto;
-    width: 100%;
 }
-.Vision2{
+
+.Vision2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     text-align: right;
-    width: 30%;
+    width: 60%;
 }
+
 .footer {
     height: 400px;
     width: 100%;
@@ -267,24 +297,26 @@ p{
 }
 
 /*Fin desktop*/
-/*Tablet*/
-@media (max-width:960px) {
-    .header{
+/*Navbar*/
+@media only screen and (min-width:0px) and (max-width:960px) {
+    .header {
         position: relative;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         width: 90%;
     }
-    .none{
+
+    .none {
         display: flex;
         width: 100%;
     }
+
     .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #5089C6;
+        background-color: rgba(3, 83, 151, .4);
         position: fixed;
         left: 0;
         top: 80px;
@@ -292,25 +324,151 @@ p{
         padding: 20px 0;
         left: 100%;
     }
+
     .menuitem {
         line-height: 70px;
     }
-    .nav-menu-links:hover,
-.nav-menu-links_active {
-    background: none;
-    color: #83c5f7;
-}
-    #menubar{
+
+    #menubar {
         display: block;
         cursor: pointer;
         color: white;
     }
+
     .nav-toggle {
         display: block;
         line-height: 40px;
     }
+
     .nav-menu_visible {
         left: 0;
         transition: left 0.3s;
     }
-}/*Fin Tablet*/
+
+    .Fondo {
+        height: 600px;
+        margin-left: 15px;
+    }
+}
+
+/*Fin Navbar*/
+/*1st break*/
+@media only screen and (min-width:741px) and (max-width:900px) {
+    .Print3darg {
+        height: 1800px;
+    }
+
+    .Vision,
+    .Mision {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .Vision2,
+    .Mision1 {
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Vision1 {
+        margin-top: 30px;
+    }
+}
+
+/*Fin 1st break*/
+/*2ndbreak*/
+@media only screen and (min-width:570px) and (max-width:740px) {
+    .Fondo {
+        height: 800px;
+    }
+
+    .Print3darg {
+        height: 2100px;
+    }
+
+    .Vision,
+    .Mision {
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .Vision2,
+    .Mision1 {
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Mision2 {
+        margin-top: 30px;
+    }
+}
+
+/*Fin 2nd break*/
+/*3rd break*/
+@media only screen and (min-width:400px) and (max-width:569px) {
+    .Fondo {
+        height: 800px;
+    }
+
+    .Print3darg {
+        height: 2500px;
+    }
+
+    .Vision,
+    .Mision {
+        flex-direction: column;
+        height: 780px;
+    }
+
+    .Vision2,
+    .Mision1 {
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Vision {
+        margin-top: 70px;
+    }
+}
+
+/*Fin 3rd break*/
+/*4th break*/
+@media only screen and (min-width:0px) and (max-width:399px) {
+    .Fondo {
+        height: 900px;
+    }
+
+    .Print3darg {
+        height: 2500px;
+    }
+
+    .Vision,
+    .Mision {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .Vision2,
+    .Mision1 {
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Vision1 img {
+        width: 95%;
+    }
+
+    .Mision2 img {
+        width: 95%;
+    }
+
+    .Vision1 {
+        margin-top: 100px;
+    }
+
+}
+

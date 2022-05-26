@@ -247,7 +247,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #5089C6;
+        background-color: rgba(3,83,151,.4);
         position: fixed;
         left: 0;
         top: 80px;
@@ -258,11 +258,7 @@ a:hover {
     .menuitem {
         line-height: 70px;
     }
-    .nav-menu-links:hover,
-.nav-menu-links_active {
-    background: none;
-    color: #83c5f7;
-}
+   
     #menubar{
         display: block;
         cursor: pointer;
