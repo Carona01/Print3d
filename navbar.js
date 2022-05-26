@@ -12,7 +12,7 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navBarId").style.top = "0";
-    document.getElementById("navBarId").style.backgroundColor = "#17A899";
+    document.getElementById("navBarId").style.backgroundColor = "#0A1931";
   } else {
     document.getElementById("navBarId").style.top = "-100px";
     document.getElementById("navBarId").style.transition = "0.3s";
