@@ -18,10 +18,10 @@
     <header>
         <div class="headerpadre" id="navBarId">
             <nav class="header">
-                <a href="index.html" class="none"><img src="Imágenes/Print3d.png" alt="PRINT3D.arg"></a>
-                <button class="navToggle" id="menubar" aria-label="Menú">
-                    <i class="fa-duotone fa-bars"></i>
-                </button>
+                <img src="Imágenes/Print3d.png" alt="PRINT3D.arg" class="Logo">
+                <div class="navToggle" id="menubar" aria-label="Menú">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <ul class="navbar" id="navbar">
                     <li class="menuitem"><a href="index.html">Home</a></li>
                     <li class="menuitem"><a href="galeria.html">Galería</a></li>
@@ -35,13 +35,15 @@
     <body>
         <div class="bgform">
             <section class="form">
-                <form action="" method="POST">
+                <form name="Form" action="https://formspree.io/f/mrgjjkpe"
+                method="POST" id="form">
                     <h1>Contacto</h1>
-                    <input type="text" name="Nombre" placeholder="Nombre" required>
-                    <input type="email" name="mail" placeholder="Su Mail" required>
-                    <textarea name="Opinion" placeholder="Deja tu comentario aquí" required></textarea>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Su Mail" required>
+                    <textarea name="message" placeholder="Deja tu comentario aquí" required></textarea>
                     <button type="submit" id="save">Enviar</button>
                 </form>
+                <a href="mailto:arona.catalina@gmail.com" id="mailto">mail</a>
             </section>
         </div>
     </body>
@@ -50,20 +52,24 @@
             <div class="footerBottom">
                 <div class="footerRedes">
                     <div>
-                        <i class="fa-brands fa-whatsapp fa-lg"></i>
-                        +54 15-XXXX-XXXX
+                        <a href="">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i>
+                            +54 15-XXXX-XXXX</a>
                     </div>
                     <div>
+                        <a href="https://www.instagram.com/print3d.arg/">
                         <i class="fa-brands fa-instagram fa-lg"></i>
-                        @Print3d.arg
+                        @Print3d.arg</a>
                     </div>
                     <div>
+                        <a href="contacto.html">
                         <i class="fa-solid fa-envelope fa-lg"></i>
-                        contact.print3d.arg@gmail.com
+                        contact.print3d.arg@gmail.com</a>
                     </div>
                     <div>
+                        <a href="https://g.page/hard-execomputers?share">
                         <i class="fa-solid fa-sign-hanging fa-lg"></i>
-                        Marcos Paz 2222
+                        Marcos Paz 2222</a>
                     </div>
 
                 </div>

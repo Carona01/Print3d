@@ -45,7 +45,10 @@ a:hover {
     justify-content: flex-start;
     color: white;
 }
-
+.Logo{
+    display: flex;
+    width: 50vh;
+}
 .menubar {
     display: none;
 }
@@ -268,7 +271,10 @@ p {
 .footerRedes div {
     padding-left: 50px;
 }
-
+.footerRedes a{
+    color: #FA7E0A;
+    text-decoration: none;
+}
 .footerRedes img {
     height: 40px;
     width: 40px;
@@ -436,13 +442,13 @@ p {
 
 /*Fin 3rd break*/
 /*4th break*/
-@media only screen and (min-width:0px) and (max-width:399px) {
+@media only screen and (min-width:380px) and (max-width:399px) {
     .Fondo {
         height: 900px;
     }
 
     .Print3darg {
-        height: 2500px;
+        height: 2600px;
     }
 
     .Vision,
@@ -471,4 +477,41 @@ p {
     }
 
 }
+/*Fin 4th break*/
+/*5th break*/
+@media only screen and (min-width:0px) and (max-width:379px) {
+    .Logo{
+        display: flex;
+        width: 50vh;
+    }
+    .Fondo {
+        height: 900px;
+        
+    margin-bottom: 20px;
+    }
 
+    .Print3darg {
+        height: 2900px;
+    }
+
+    .Vision,
+    .Mision {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .Vision2,
+    .Mision1 {
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .Vision1 img {
+        width: 95%;
+    }
+
+    .Mision2 img {
+        width: 95%;
+    }
+}

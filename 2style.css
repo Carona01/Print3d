@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
 }
+
 .header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 90%;
 }
+
 .navbar {
     width: 50%;
     display: flex;
@@ -17,9 +19,11 @@
     font-size: 20px;
     color: white;
 }
-li{
+
+li {
     list-style: none;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -28,21 +32,28 @@ li{
     border-radius: 15px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
 a:hover {
     box-shadow: inset 1000px 0 0 0 #035397;
     color: white;
     transition: 1s;
 }
+
 .none {
     width: 50%;
     display: flex;
     justify-content: flex-start;
     color: white;
 }
-.menubar{
+.Logo{
+    display: flex;
+    width: 50vh;
+}
+.menubar {
     display: none;
 }
-.headerpadre{
+
+.headerpadre {
     background-color: #0A1931;
     display: flex;
     justify-content: center;
@@ -56,14 +67,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3000px;
+    height: 4000px;
     background-image: url("Imágenes/Pensante.jpg");
     background-repeat:repeat-x;
     background-position: center;
     background-size: cover;
 }
 .Galería{
-    height: 3000px;
+    height: 4000px;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -85,7 +96,7 @@ h2{
 .item1 {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 500px;
     width: 95%;
     justify-content: flex-start;
     font-family: 'Anton', sans-serif;
@@ -100,7 +111,7 @@ h2{
 .item2 {
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 500px;
     width: 95%;
     justify-content: flex-end;
     align-items: flex-end;
@@ -151,15 +162,17 @@ p{
     justify-content: space-evenly;
     background-color: #035397;
     width: 80%;
-    color: #FA7E0A;
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
 }
 
-.footerRedes div {
+.footerRedes div{
     padding-left: 50px;
+    }
+.footerRedes a{
+    color: #FA7E0A;
+    text-decoration: none;
 }
-
 .footerRedes img {
     height: 40px;
     width: 40px;
@@ -186,6 +199,7 @@ p{
     color: white;
     margin-top: 10px;
 }
+
 
 /*Fin desktop*/
 /*Navbar*/
