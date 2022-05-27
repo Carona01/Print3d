@@ -19,7 +19,9 @@
     font-size: 20px;
     color: white;
 }
-
+#menubar{
+    display: none;
+}
 li {
     list-style: none;
 }
@@ -82,9 +84,7 @@ a:hover {
     color: white;
     border: none;
 }
-#mailto{
-    opacity: 0;
-}
+
 input, textarea {
     box-sizing: border-box;
     width: 100%;

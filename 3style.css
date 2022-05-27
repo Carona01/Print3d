@@ -19,7 +19,9 @@
     font-size: 20px;
     color: white;
 }
-
+#menubar{
+    display: none;
+}
 li {
     list-style: none;
 }
